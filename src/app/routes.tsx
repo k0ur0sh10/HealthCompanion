@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createHashRouter } from "react-router-dom";
 import PatientOnboarding from "./pages/patient/PatientOnboarding";
 import PatientHome from "./pages/patient/PatientHome";
 import PatientMedications from "./pages/patient/PatientMedications";
@@ -17,7 +17,7 @@ import RoleSelector from "./pages/RoleSelector";
 import PatientLogin from "./pages/patient/PatientLogin";
 import NotFound from "./pages/NotFound";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     Component: RoleSelector,
